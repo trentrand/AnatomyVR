@@ -10,6 +10,6 @@ public class Cellmove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(Vector3.back * Time.deltaTime * 10);
+        transform.Translate(Vector3.back * Time.deltaTime * 15);
     }
 }

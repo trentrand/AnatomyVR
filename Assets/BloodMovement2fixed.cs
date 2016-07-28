@@ -24,7 +24,7 @@ public class BloodMovement2fixed : MonoBehaviour
     }
     IEnumerator resetPositionOnInterval()
     {
-        yield return new WaitForSeconds(Random.Range(20,40));
+        yield return new WaitForSeconds(Random.Range(15,30));
 
         // Reset position, then wait another Random seconds
         transform.position = initialPosition;

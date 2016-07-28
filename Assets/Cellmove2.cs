@@ -16,7 +16,7 @@ public class Cellmove2 : MonoBehaviour
     void Update()
     {
         if(ready == true) {
-            transform.Translate(Vector3.back * Time.deltaTime * 10);
+            transform.Translate(Vector3.back * Time.deltaTime * 15);
         }
     }
 
