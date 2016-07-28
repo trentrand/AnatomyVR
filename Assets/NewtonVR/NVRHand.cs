@@ -146,6 +146,25 @@ namespace NewtonVR
 
             if (CurrentInteractionStyle == InterationStyle.GripDownToInteract)
             {
+                if (UseButtonUp == true)
+                {
+                    VisibilityLocked = false;
+                }
+
+                if (UseButtonDown == true)
+                {
+                    if (CurrentlyInteracting == null)
+                    {
+                        PickupClosest();
+                    }
+                }
+                else if (UseButtonUp == true && CurrentlyInteracting != null)
+                {
+                    EndInteraction(null);
+                }
+            }
+            if (CurrentInteractionStyle == InterationStyle.GripDownToInteract)
+            {
                 if (HoldButtonUp == true)
                 {
                     VisibilityLocked = false;
@@ -238,6 +257,42 @@ namespace NewtonVR
         {
             if (NVRPlayer.Instance.PhysicalHands == true)
             {
+                if (CurrentInteractionStyle == InterationStyle.GripDownToInteract)
+                {
+                    if (UseButtonPressed == true && IsInteracting == false)
+                    {
+                        if (CurrentHandState != HandState.GripDownNotInteracting && VisibilityLocked == false)
+                        {
+                            VisibilityLocked = true;
+                            SetVisibility(VisibilityLevel.Visible);
+                            CurrentHandState = HandState.GripDownNotInteracting;
+                        }
+                    }
+                    else if (UseButtonDown == true && IsInteracting == true)
+                    {
+                        if (CurrentHandState != HandState.GripDownInteracting && VisibilityLocked == false)
+                        {
+                            VisibilityLocked = true;
+                            if (NVRPlayer.Instance.MakeControllerInvisibleOnInteraction == true)
+                            {
+                                SetVisibility(VisibilityLevel.Invisible);
+                            }
+                            else
+                            {
+                                SetVisibility(VisibilityLevel.Ghost);
+                            }
+                            CurrentHandState = HandState.GripDownInteracting;
+                        }
+                    }
+                    else if (IsInteracting == false)
+                    {
+                        if (CurrentHandState != HandState.Idle && VisibilityLocked == false)
+                        {
+                            SetVisibility(VisibilityLevel.Ghost);
+                            CurrentHandState = HandState.Idle;
+                        }
+                    }
+                }
                 if (CurrentInteractionStyle == InterationStyle.GripDownToInteract)
                 {
                     if (HoldButtonPressed == true && IsInteracting == false)

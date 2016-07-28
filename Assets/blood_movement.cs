@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Bloodmovement : MonoBehaviour
 {
     int ranRotateNum = Random.Range(100, 200);
@@ -8,7 +9,7 @@ public class Bloodmovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
+
         StartCoroutine(resetPositionOnInterval());
         initialPosition = gameObject.transform.position;
     }
@@ -29,5 +30,22 @@ public class Bloodmovement : MonoBehaviour
         transform.position = initialPosition;
 
         StartCoroutine(resetPositionOnInterval());
+    }
+
+    public class blood_movement : MonoBehaviour
+    {
+
+        // Use this for initialization
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
     }
 }
