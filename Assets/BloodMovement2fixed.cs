@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bloodmovement : MonoBehaviour
+public class BloodMovement2fixed : MonoBehaviour
 {
+
     int ranRotateNum = Random.Range(100, 200);
     Vector3 initialPosition;
     // Use this for initialization
     void Start()
     {
-        
+        StartCoroutine(test());
         StartCoroutine(resetPositionOnInterval());
         initialPosition = gameObject.transform.position;
     }
@@ -23,11 +24,17 @@ public class Bloodmovement : MonoBehaviour
     }
     IEnumerator resetPositionOnInterval()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.5f);
 
-        // Reset position, then wait another 2 seconds
+        // Reset position, then wait another 3.5 seconds
         transform.position = initialPosition;
-
+        StartCoroutine(test());
         StartCoroutine(resetPositionOnInterval());
     }
+    IEnumerator test()
+    {
+        yield return new WaitForSeconds(1f);
+    }
+
+
 }
