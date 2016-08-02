@@ -23,10 +23,7 @@ public class BloodMovement2fixed : MonoBehaviour
 
         transform.Rotate(Vector3.one * Time.deltaTime * 100);
 
-        if (grabScript.AttachedHand != null)
-        {
-            SetActive(false);
-        }
+     
 
 
     }
