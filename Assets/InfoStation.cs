@@ -5,10 +5,13 @@ using System;
 public class InfoStation : MonoBehaviour
 {
     TextMesh Info;
+    public const string xmlPath = "FactList";
+    public FactContainer factCollection;
 
     void Start()
     {
         Info = GameObject.Find("Info").GetComponent<TextMesh>();
+        factCollection = FactContainer.Load(xmlPath);
     }
 
     void OnTriggerEnter(Collider other)
@@ -21,13 +24,13 @@ public class InfoStation : MonoBehaviour
             case "Heart":
                 if (other.gameObject.tag == "Heart")
                 {
-                    Info.text = "Chicken, pig, and beef hearts are all eaten across the globe. your heart is in your chest and is protected by your rib cage. Blood is the fluid that provides the body with oxygen and nutrients. The heart is very important, it is the organ that pumps blood throughout the body. The study of the heart is cardiology. Blood that goes towards the heart is carried through tubes called veins. Blood that leaves the heart that goes to the other organs, are carried through tubes called arteries.";
+                    Info.text = factCollection.facts[1].Text1;
                 }
                 break;
             case "Lungs":
                 if (other.gameObject.tag == "Lungs")
                 {
-                    Info.text = "HELLO WORLD numero dos";
+                    Info.text = factCollection.facts[2].Text1;
                 }
                 break;
             case "Brain":
