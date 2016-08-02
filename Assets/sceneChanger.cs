@@ -19,7 +19,7 @@ public class sceneChanger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "heart")
+        if (other.tag == "camera")
         {
             SceneManager.LoadScene("BloodSceen");
         }
