@@ -19,5 +19,9 @@ public class pauseScriptScript : MonoBehaviour {
         {
             bloodMovementScript.enabled = false;
         }
+        else
+        {
+            bloodMovementScript.enabled = true;
+        }
 	}
 }
