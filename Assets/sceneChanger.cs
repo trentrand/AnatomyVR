@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class sceneChanger : MonoBehaviour
 {
@@ -18,9 +19,9 @@ public class sceneChanger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag = "heart")
+        if (other.tag == "heart")
         {
-            SceneManager.loadScene(bloodScene.unity);
+            SceneManager.LoadScene("BloodSceen");
         }
     }
 }
