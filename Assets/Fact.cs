@@ -9,12 +9,12 @@ public class Fact
     public string word;
 
     [XmlElement("Fact1")]
-    public string Text1;
+    public string TextA;
 
     [XmlElement("Fact2")]
-    public string Text2;
+    public string TextB;
 
     [XmlElement("Fact3")]
-    public string Text3;
+    public string TextC;
 }
 
