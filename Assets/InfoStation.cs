@@ -23,31 +23,31 @@ public class InfoStation : MonoBehaviour
             case "untagged":
                 break;
             case "Heart":
-                if (other.gameObject.tag == "Heart")
+                if (other.gameObject.tag == "heart")
                 {
                     Info.text = factCollection.facts[1].TextA;
                 }
                 break;
             case "Lungs":
-                if (other.gameObject.tag == "Lungs")
+                if (other.gameObject.tag == "lungs")
                 {
-                    Info.text = factCollection.facts[2].TextA;
+                    Info.text = "Lungs are cool";
                 }
                 break;
             case "Brain":
-                if (other.gameObject.tag == "Brain")
+                if (other.gameObject.tag == "brain")
                 {
                     Info.text = "HELLO WORLD";
                 }
                 break;
             case "Spine":
-                if (other.gameObject.tag == "Spine")
+                if (other.gameObject.tag == "spine")
                 {
                     Info.text = "HELLO WORLD";
                 }
                 break;
             case "Intestines":
-                if (other.gameObject.tag == "Intestines")
+                if (other.gameObject.tag == "intestines")
                 {
                     Info.text = "HELLO WORLD";
                 }

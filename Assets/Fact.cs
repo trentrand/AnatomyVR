@@ -8,13 +8,13 @@ public class Fact
     [XmlAttribute("name")]
     public string word;
 
-    [XmlElement("Fact1")]
+    [XmlElement("FactA")]
     public string TextA;
 
-    [XmlElement("Fact2")]
+    [XmlElement("FactB")]
     public string TextB;
 
-    [XmlElement("Fact3")]
+    [XmlElement("FactC")]
     public string TextC;
 }
 
