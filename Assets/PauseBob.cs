@@ -8,6 +8,7 @@ public class PauseBob : MonoBehaviour
     NVRInteractableItem grabScript;
     public BubbleBobber bobscript;
     Vector3 initialPosition;
+    Quaternion iniRot;
 
 
     // Use this for initialization
@@ -16,6 +17,7 @@ public class PauseBob : MonoBehaviour
         grabScript = gameObject.GetComponent<NVRInteractableItem>();
         bobscript = gameObject.GetComponent<BubbleBobber>();
         initialPosition = gameObject.transform.position;
+        iniRot = gameObject.transform.rotation;
     }
 
     // Update is called once per frame
@@ -29,6 +31,8 @@ public class PauseBob : MonoBehaviour
         {
             bobscript.enabled = true;
             transform.position = initialPosition;
+            transform.rotation = iniRot;
+
         }
     }
 }
