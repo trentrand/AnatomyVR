@@ -9,6 +9,7 @@ public class InfoStation : MonoBehaviour
     public FactContainer factCollection;
     BoxCollider triggerCollider;
     public GrowBubble bubbleBig;
+    public string broadCaster = "none";
 
     void Start()
     {
@@ -27,18 +28,22 @@ public class InfoStation : MonoBehaviour
         switch (other.gameObject.name)
         {
             case Anatomy.heart:
+                //Why are you assuming a male is reading the info?
                 Info.text = factCollection.facts[1].TextA;
                 bubbleBig.growBubble = true;
+                broadCaster = "heart";
                 break;
 
             case Anatomy.lungs:
                 Info.text = factCollection.facts[1].TextA;
                 bubbleBig.growBubble = true;
+                broadCaster = "lungs";
                 break;
 
             case Anatomy.spine:
                 Info.text = "HELLO WORLD";
                 bubbleBig.growBubble = true;
+                broadCaster = "spine";
                 break;
 
             default:
