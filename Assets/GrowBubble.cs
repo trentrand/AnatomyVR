@@ -2,8 +2,9 @@
 using System.Collections;
 
 
-public class GrowBubble : MonoBehaviour {
-    public bool trueOrFalse = false;
+public class GrowBubble : MonoBehaviour
+{
+    public bool growBubble = false;
     float growNum = 0;
     BubbleBobber floatHeight;
     // Use this for initialization
@@ -16,7 +17,7 @@ public class GrowBubble : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (trueOrFalse == true)
+        if (growBubble == true)
         {
             if (growNum <= 0.31)
             {
@@ -24,7 +25,7 @@ public class GrowBubble : MonoBehaviour {
 
                 growNum = growNum + 0.1f;
 
-                floatHeight.midpoint = floatHeight.midpoint + growNum/2;
+                floatHeight.midpoint = floatHeight.midpoint + growNum / 2;
 
             }
 
@@ -36,8 +37,6 @@ public class GrowBubble : MonoBehaviour {
             floatHeight.midpoint = 0.3f;
         }
     }
-
-
 }
 
 

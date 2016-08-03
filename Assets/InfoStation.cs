@@ -21,54 +21,53 @@ public class InfoStation : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // Output collided object's name
+        Debug.Log(other.gameObject.name);
 
-        Debug.Log(other.tag);
-
-        switch (other.tag)
+        switch (other.gameObject.name)
         {
-            case "Untagged":
-                bubbleBig.trueOrFalse = false;
-                break;
-            case "Heart":
+            case Anatomy.heart:
                 Info.text = factCollection.facts[1].TextA;
-                bubbleBig.trueOrFalse = true;
-
-                break;
-            case "Lungs":
-
-                Info.text = factCollection.facts[2].TextA;
-                bubbleBig.trueOrFalse = true;
-
-                break;
-            case "Brain":
-                if (other.gameObject.tag == "brain")
-                {
-                    Info.text = "RANDOM LETTERS";
-                    bubbleBig.trueOrFalse = true;
-                }
-                break;
-            case "Spine":
-                if (other.gameObject.tag == "spine")
-                {
-                    Info.text = "HELLO WORLD";
-                    bubbleBig.trueOrFalse = true;
-                }
-                break;
-            case "Intestines":
-                if (other.gameObject.tag == "intestines")
-                {
-                    Info.text = "HELLO WORLD";
-                    bubbleBig.trueOrFalse = true;
-                }
+                bubbleBig.growBubble = true;
                 break;
 
-            // TODO: check if hands are colliding, and if so dont make the spehere smaller
+            case Anatomy.lungs:
+                Info.text = factCollection.facts[1].TextA;
+                bubbleBig.growBubble = true;
+                break;
+
+            case Anatomy.spine:
+                Info.text = "HELLO WORLD";
+                bubbleBig.growBubble = true;
+                break;
+
             default:
+                break;
+        }
+    }
 
-                bubbleBig.trueOrFalse = false;
+    void OnTriggerExit(Collider other)
+    {
+        switch (other.gameObject.name)
+        {
+            case Anatomy.heart:
+                Info.text = "";
+                bubbleBig.growBubble = false;
+
+                break;
+            case Anatomy.lungs:
+                Info.text = "";
+                bubbleBig.growBubble = false;
+
+                break;
+            case Anatomy.spine:
+                Info.text = "";
+                bubbleBig.growBubble = false;
+
                 break;
 
-
+            default:
+                break;
         }
     }
 }
