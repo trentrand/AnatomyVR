@@ -9,36 +9,36 @@ public class InfoStation : MonoBehaviour
     public FactContainer factCollection;
     BoxCollider triggerCollider;
     public GrowBubble bubbleBig;
+
     void Start()
     {
         Info = GameObject.Find("Info").GetComponent<TextMesh>();
         factCollection = FactContainer.Load(xmlPath);
         triggerCollider = GetComponent<BoxCollider>();
-        bubbleBig = gameObject.GetComponent<GrowBubble>();
+        bubbleBig = GameObject.Find("Sphere").GetComponent<GrowBubble>();
+
     }
-    void start()
-    {
-        bubbleBig.trueOrFalse = true;
-    }
+
     void OnTriggerEnter(Collider other)
     {
+
+        Debug.Log(other.tag);
+
         switch (other.tag)
         {
-            case "untagged":
+            case "Untagged":
+                bubbleBig.trueOrFalse = false;
                 break;
             case "Heart":
-                if (other.gameObject.tag == "heart")
-                {
-                    Info.text = factCollection.facts[1].TextA;
-                    bubbleBig.trueOrFalse = true;
-                }
+                Info.text = factCollection.facts[1].TextA;
+                bubbleBig.trueOrFalse = true;
+
                 break;
             case "Lungs":
-                if (other.gameObject.tag == "lungs")
-                {
-                    Info.text = "Lungs are cool";
-                    bubbleBig.trueOrFalse = true;
-                }
+
+                Info.text = factCollection.facts[2].TextA;
+                bubbleBig.trueOrFalse = true;
+
                 break;
             case "Brain":
                 if (other.gameObject.tag == "brain")
@@ -61,7 +61,11 @@ public class InfoStation : MonoBehaviour
                     bubbleBig.trueOrFalse = true;
                 }
                 break;
+
+            // TODO: check if hands are colliding, and if so dont make the spehere smaller
             default:
+
+                bubbleBig.trueOrFalse = false;
                 break;
 
 
