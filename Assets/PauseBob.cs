@@ -18,6 +18,7 @@ public class PauseBob : MonoBehaviour
         bobscript = gameObject.GetComponent<BubbleBobber>();
         initialPosition = gameObject.transform.position;
         iniRot = gameObject.transform.rotation;
+        bobscript.enabled = true;
     }
 
     // Update is called once per frame
