@@ -16,7 +16,10 @@ public class InfoStation : MonoBehaviour
         triggerCollider = GetComponent<BoxCollider>();
         bubbleBig = gameObject.GetComponent<GrowBubble>();
     }
-
+    void start()
+    {
+        bubbleBig.trueOrFalse = true;
+    }
     void OnTriggerEnter(Collider other)
     {
         switch (other.tag)
@@ -27,35 +30,35 @@ public class InfoStation : MonoBehaviour
                 if (other.gameObject.tag == "heart")
                 {
                     Info.text = factCollection.facts[1].TextA;
-                    bubbleBig.enabled = true;
+                    bubbleBig.trueOrFalse = true;
                 }
                 break;
             case "Lungs":
                 if (other.gameObject.tag == "lungs")
                 {
                     Info.text = "Lungs are cool";
-                    bubbleBig.enabled = true;
+                    bubbleBig.trueOrFalse = true;
                 }
                 break;
             case "Brain":
                 if (other.gameObject.tag == "brain")
                 {
                     Info.text = "RANDOM LETTERS";
-                    bubbleBig.enabled = true;
+                    bubbleBig.trueOrFalse = true;
                 }
                 break;
             case "Spine":
                 if (other.gameObject.tag == "spine")
                 {
                     Info.text = "HELLO WORLD";
-                    bubbleBig.enabled = true;
+                    bubbleBig.trueOrFalse = true;
                 }
                 break;
             case "Intestines":
                 if (other.gameObject.tag == "intestines")
                 {
                     Info.text = "HELLO WORLD";
-                    bubbleBig.enabled = true;
+                    bubbleBig.trueOrFalse = true;
                 }
                 break;
             default:
