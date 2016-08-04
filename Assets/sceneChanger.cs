@@ -32,11 +32,11 @@ public class sceneChanger : MonoBehaviour
             }
             if (item.broadCaster == "lungs")
             {
-                SceneManager.LoadScene("LungScene");
+                // SceneManager.LoadScene("LungScene");
             }
             if (item.broadCaster == "spine")
             {
-                SceneManager.LoadScene("NerveScene");
+                // SceneManager.LoadScene("NerveScene");
             }
 
         }
