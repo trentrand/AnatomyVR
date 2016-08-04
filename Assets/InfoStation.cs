@@ -28,7 +28,6 @@ public class InfoStation : MonoBehaviour
         switch (other.gameObject.name)
         {
             case Anatomy.heart:
-                //Why are you assuming a male is reading the info?
                 Info.text = factCollection.facts[0].TextA;
                 bubbleBig.growBubble = true;
                 broadCaster = "heart";
@@ -41,7 +40,7 @@ public class InfoStation : MonoBehaviour
                 break;
 
             case Anatomy.spine:
-                Info.text = "HELLO WORLD";
+                Info.text = factCollection.facts[2].TextA;
                 bubbleBig.growBubble = true;
                 broadCaster = "spine";
                 break;
