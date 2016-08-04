@@ -24,7 +24,7 @@ public class sceneChanger : MonoBehaviour
         {
             if (item.broadCaster == "none")
             {
-                SceneManager.LoadScene("Anatomy");
+                //Nothing Happens :)
             }
             if (item.broadCaster == "heart")
             {
