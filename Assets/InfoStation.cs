@@ -13,6 +13,7 @@ public class InfoStation : MonoBehaviour
     GameObject image;
     public Material blood2;
     public Material none;
+    growscript screen;
 
     void Start()
     {
@@ -20,12 +21,14 @@ public class InfoStation : MonoBehaviour
         factCollection = FactContainer.Load(xmlPath);
         triggerCollider = GetComponent<BoxCollider>();
         bubbleBig = GameObject.Find("Animation Orb").GetComponent<GrowBubble>();
+        screen = GameObject.Find("HoloScreen (5)").GetComponent<growscript>();
 
 
     }
 
     void OnTriggerEnter(Collider other)
     {
+        screen.number = true;
         switch (other.gameObject.name)
         {
             case Anatomy.heart:
@@ -33,7 +36,7 @@ public class InfoStation : MonoBehaviour
                 bubbleBig.growBubble = true;
 
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = blood2;
-
+                
                 broadCaster = "heart";
                 break;
 
