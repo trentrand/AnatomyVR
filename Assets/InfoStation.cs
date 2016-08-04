@@ -16,15 +16,12 @@ public class InfoStation : MonoBehaviour
         Info = GameObject.Find("Info").GetComponent<TextMesh>();
         factCollection = FactContainer.Load(xmlPath);
         triggerCollider = GetComponent<BoxCollider>();
-        bubbleBig = GameObject.Find("Sphere").GetComponent<GrowBubble>();
+        bubbleBig = GameObject.Find("Animation Orb").GetComponent<GrowBubble>();
 
     }
 
     void OnTriggerEnter(Collider other)
     {
-        // Output collided object's name
-        Debug.Log(other.gameObject.name);
-
         switch (other.gameObject.name)
         {
             case Anatomy.heart:

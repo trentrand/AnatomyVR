@@ -12,15 +12,12 @@ public class sceneChanger : MonoBehaviour
         item = GameObject.Find("Table").GetComponent<InfoStation>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "camera")
+        // Output collided object's name
+        Debug.Log(other.gameObject.name);
+
+        if (other.tag == "Orb")
         {
             if (item.broadCaster == "none")
             {
