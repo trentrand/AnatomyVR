@@ -29,7 +29,7 @@ public class InfoStation : MonoBehaviour
         {
             case Anatomy.heart:
                 //Why are you assuming a male is reading the info?
-                Info.text = factCollection.facts[1].TextA;
+                Info.text = factCollection.facts[0].TextA;
                 bubbleBig.growBubble = true;
                 broadCaster = "heart";
                 break;
@@ -47,6 +47,7 @@ public class InfoStation : MonoBehaviour
                 break;
 
             default:
+                broadCaster = "none";
                 break;
         }
     }
