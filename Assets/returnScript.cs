@@ -21,7 +21,7 @@ public class returnScript : MonoBehaviour
     {
         if (other.tag == "camera")
         {
-
+            Debug.Log("BANANAS");
             SceneManager.LoadScene("Anatomy");
 
 
