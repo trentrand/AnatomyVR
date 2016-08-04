@@ -36,7 +36,7 @@ public class InfoStation : MonoBehaviour
                 bubbleBig.growBubble = true;
 
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = blood2;
-                
+                GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 broadCaster = "heart";
                 break;
 
@@ -60,13 +60,15 @@ public class InfoStation : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        screen.number = false;
         switch (other.gameObject.name)
         {
+
             case Anatomy.heart:
                 Info.text = "";
                 bubbleBig.growBubble = false;
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
-
+                GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
 
                 break;
             case Anatomy.lungs:
