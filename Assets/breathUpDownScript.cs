@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class breathUpDownScript : MonoBehaviour {
+    Vector3 currentPos;
 
 	// Use this for initialization
 	void Start () {
@@ -10,6 +11,7 @@ public class breathUpDownScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position =(Vector3.up * Time.deltaTime * 100);
+        currentPos = Vector3.up + currentPos;
+        transform.position =(currentPos);
 	}
 }
