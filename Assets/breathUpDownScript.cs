@@ -12,6 +12,16 @@ public class breathUpDownScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         currentPos = Vector3.up + currentPos;
-        transform.position =(currentPos);
+        transform.position = (currentPos);
+        if (transform.position.y >= 500)
+        {
+            currentPos = Vector3.down + currentPos;
+            transform.position = (currentPos);
+        }
+        if (transform.position.y <= 0)
+        {
+            currentPos = Vector3.up + currentPos;
+            transform.position = (currentPos);
+        }
 	}
 }
