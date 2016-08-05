@@ -161,6 +161,29 @@
         the spine when we are active.
       </FactC>
 
+
+    </Fact>
+
+    <Fact name="Ribs">
+
+      <FactA>
+        The ribs protect many internal organs,
+        including the lungs. The ribs are flexible
+        so that when the lungs expand, the ribs
+        expand with them. The ribs are made from
+        bone and cartilage. The first through seventh
+        ribs are considered "true ribs" because they
+        attack directly to the sternum. The eight
+        through tenth pairs are called "false ribs"
+        because the attach to the cartilage before the
+        sternum. The last two pairs are called
+        "floating ribs" because they don't attach to
+        the sternum at all.
+
+      </FactA>
+
+
+
     </Fact>
     <Fact name="Brain">
 
@@ -213,6 +236,39 @@
       </FactC>
 
     </Fact>
+
+    <Fact name="Skull">
+
+      <FactA>
+        The word "Skull" probably originated from the
+        Old Norse work "Skalli" which means bald.
+        The skull structures the face and protects
+        the brain. An infant's skull has 44 bones.
+        As the child developes, the bones fuse
+        together. An adult's skull has 22 bones.
+
+      </FactA>
+
+
+
+    </Fact>
+    <Fact name="Bone">
+
+      <FactA>
+        A bone in the human body.
+
+      </FactA>
+
+    </Fact>
+    <Fact name="Hand">
+
+      <FactA>
+        The hands consist of an average of 27 bones.
+
+      </FactA>
+
+
+    </Fact>
     <Fact name="Intestines">
 
       <FactA>
@@ -239,8 +295,6 @@
         Eating consumes up to 5 years of your life.
       </FactB>
 
-      <FactC>
-      </FactC>
 
     </Fact>
   </Facts>

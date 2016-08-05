@@ -19,7 +19,9 @@ public class Anatomy : MonoBehaviour
         foot = "Foot",
         humerus = "Humerus",
         heart = "Heart",
+        trachea = "trachea",
         lungs = "Lungs";
+
 
     // Use this for initialization
     void Start()
