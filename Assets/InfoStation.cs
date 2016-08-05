@@ -74,12 +74,14 @@ public class InfoStation : MonoBehaviour
             case Anatomy.lungs:
                 Info.text = "";
                 bubbleBig.growBubble = false;
-
+                GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
+                GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 break;
             case Anatomy.spine:
                 Info.text = "";
                 bubbleBig.growBubble = false;
-
+                GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
+                GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 break;
 
             default:
