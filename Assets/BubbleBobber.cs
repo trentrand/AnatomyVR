@@ -12,14 +12,14 @@ public class BubbleBobber : MonoBehaviour
 
     NVRInteractableItem grabScript;
     Vector3 initialPosition;
-    Quaternion initialRotation;
+    //Quaternion initialRotation;
 
     void Start()
     {
         grabScript = gameObject.GetComponent<NVRInteractableItem>();
 
         initialPosition = gameObject.transform.position;
-        initialRotation = gameObject.transform.rotation;
+        // initialRotation = gameObject.transform.rotation;
     }
 
     void Update()
@@ -31,7 +31,7 @@ public class BubbleBobber : MonoBehaviour
             if (gameObject.transform.position.x != initialPosition.x || gameObject.transform.position.z != initialPosition.z)
             {
                 gameObject.transform.position = initialPosition;
-                gameObject.transform.rotation = initialRotation;
+                //   gameObject.transform.rotation = initialRotation;
             }
 
             float waveslice = 0.0f;

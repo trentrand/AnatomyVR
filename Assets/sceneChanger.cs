@@ -1,23 +1,23 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using NewtonVR;
 
 public class sceneChanger : MonoBehaviour
 {
     public InfoStation item;
+    NVRInteractableItem grabScript;
 
     // Use this for initialization
     void Start()
     {
         item = GameObject.Find("Table").GetComponent<InfoStation>();
+        grabScript = gameObject.GetComponent<NVRInteractableItem>();
     }
 
-    void OnTriggerEnter(Collider other)
+    void Update()
     {
-        // Output collided object's name
-        Debug.Log(other.gameObject.name);
-
-        if (other.tag == "Orb")
+        if (grabScript.AttachedHand != null)
         {
             if (item.broadCaster == "none")
             {
@@ -37,5 +37,8 @@ public class sceneChanger : MonoBehaviour
             }
 
         }
+
+
+
     }
 }

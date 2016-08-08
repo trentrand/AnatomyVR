@@ -116,13 +116,14 @@ public class InfoStation : MonoBehaviour
                 break;
 
             default:
-                broadCaster = "none";
+
                 break;
         }
     }
 
     void OnTriggerExit(Collider other)
     {
+
 
         switch (other.gameObject.name)
         {
@@ -133,6 +134,8 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 screen.number = false;
+                broadCaster = "none";
+
                 break;
             case Anatomy.lungs:
                 Info.text = "";
@@ -140,6 +143,8 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 screen.number = false;
+                broadCaster = "none";
+
                 break;
             case Anatomy.spine:
                 Info.text = "";
@@ -147,6 +152,8 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 screen.number = false;
+                broadCaster = "none";
+
                 break;
             case Anatomy.ribs:
                 Info.text = "";
@@ -211,6 +218,7 @@ public class InfoStation : MonoBehaviour
 
 
             default:
+
                 break;
         }
     }
