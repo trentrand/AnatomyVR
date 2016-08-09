@@ -8,7 +8,7 @@ public class BubbleBobber : MonoBehaviour
     private float timer = 0.0f;
     float bobbingSpeed = 0.08f;
     float bobbingAmount = 0.01f;
-    public float midpoint = 0.3f;
+    public float midpoint = 0.5f;
 
     NVRInteractableItem grabScript;
     Vector3 initialPosition;
