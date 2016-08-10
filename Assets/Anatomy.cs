@@ -20,7 +20,9 @@ public class Anatomy : MonoBehaviour
         humerus = "Humerus",
         heart = "Heart",
         trachea = "trachea",
+        brain = "Brain",
         lungs = "Lungs";
+
 
 
     // Use this for initialization

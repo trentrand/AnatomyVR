@@ -39,6 +39,14 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 broadCaster = "heart";
                 break;
+            case Anatomy.brain:
+                Info.text = factCollection.facts[4].TextA;
+                bubbleBig.growBubble = true;
+                screen.number = true;
+                GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
+                GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
+                broadCaster = "brain";
+                break;
 
             case Anatomy.lungs:
                 Info.text = factCollection.facts[1].TextA;
@@ -135,7 +143,14 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 screen.number = false;
                 broadCaster = "none";
-
+                break;
+            case Anatomy.brain:
+                Info.text = "";
+                bubbleBig.growBubble = false;
+                GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = none;
+                GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
+                screen.number = false;
+                broadCaster = "none";
                 break;
             case Anatomy.lungs:
                 Info.text = "";

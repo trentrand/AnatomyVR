@@ -35,6 +35,10 @@ public class sceneChanger : MonoBehaviour
             {
                 // SceneManager.LoadScene("NerveScene");
             }
+            if (item.broadCaster == "brain")
+            {
+                // SceneManager.LoadScene("BrainScene");
+            }
 
         }
 
