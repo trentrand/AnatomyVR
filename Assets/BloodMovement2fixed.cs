@@ -11,7 +11,7 @@ public class BloodMovement2fixed : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //   StartCoroutine(test());
+        //  StartCoroutine(test());
         //   StartCoroutine(resetPositionOnInterval());
         //  initialPosition = gameObject.transform.position;
         grabScript = GetComponent<NVRInteractableItem>();

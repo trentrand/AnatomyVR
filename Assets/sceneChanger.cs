@@ -8,6 +8,7 @@ public class sceneChanger : MonoBehaviour
     public InfoStation item;
     NVRInteractableItem grabScript;
 
+
     // Use this for initialization
     void Start()
     {
@@ -37,7 +38,8 @@ public class sceneChanger : MonoBehaviour
             }
             if (item.broadCaster == "brain")
             {
-                // SceneManager.LoadScene("BrainScene");
+                SceneManager.LoadScene("brainScene");
+
             }
 
         }
