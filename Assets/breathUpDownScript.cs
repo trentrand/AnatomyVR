@@ -1,27 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class breathUpDownScript : MonoBehaviour {
-    Vector3 currentPos;
+public class breathUpDownScript : MonoBehaviour
+{
+    Vector3 initialPosition;
+    // Use this for initialization
+    int timer = 0;
+    bool down = false;
+    void Start()
+    {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        currentPos = Vector3.up + currentPos;
-        transform.position = (currentPos);
-        if (transform.position.y >= 500)
+        initialPosition = gameObject.transform.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (timer == 0)
         {
-            currentPos = Vector3.down + currentPos;
-            transform.position = (currentPos);
+            down = false;
         }
-        if (transform.position.y <= 0)
+        if (timer == 200)
         {
-            currentPos = Vector3.up + currentPos;
-            transform.position = (currentPos);
+            down = true;
         }
-	}
+        if (down == false)
+        {
+            transform.Translate(Vector3.up * Time.deltaTime * 65);
+            timer++;
+        }
+        if (down == true)
+        {
+            transform.Translate(Vector3.down * Time.deltaTime * 65);
+            timer--;
+        }
+    }
+
 }
