@@ -19,7 +19,7 @@ public class mushMove : MonoBehaviour
     }
     IEnumerator resetPositionOnInterval()
     {
-        yield return new WaitForSeconds(Random.Range(14, 14));
+        yield return new WaitForSeconds(Random.Range(7, 14));
 
         // Reset position, then wait another Random seconds
         transform.position = initialPosition;

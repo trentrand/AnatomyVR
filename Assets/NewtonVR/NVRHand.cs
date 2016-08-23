@@ -90,7 +90,7 @@ namespace NewtonVR
             EstimationSampleIndex = 0;
 
             VisibilityLocked = false;
-            
+
             Inputs = new Dictionary<EVRButtonId, NVRButtonInputs>();
             System.Array buttonTypes = System.Enum.GetValues(typeof(EVRButtonId));
             foreach (EVRButtonId buttonType in buttonTypes)
@@ -217,7 +217,7 @@ namespace NewtonVR
             {
                 CurrentlyInteracting.InteractingUpdate(this);
             }
-            
+
             UpdateVisibilityAndColliders();
         }
 
@@ -379,7 +379,7 @@ namespace NewtonVR
             float delta = LastDeltas.Sum();
             Vector3 distance = Vector3.zero;
 
-            for (int index = 0; index < LastPositions.Length-1; index++)
+            for (int index = 0; index < LastPositions.Length - 1; index++)
             {
                 Vector3 diff = LastPositions[index + 1] - LastPositions[index];
                 distance += diff;
@@ -395,7 +395,7 @@ namespace NewtonVR
             Vector3 unitAxis = Vector3.zero;
             Quaternion rotation = Quaternion.identity;
 
-            rotation =  LastRotations[LastRotations.Length-1] * Quaternion.Inverse(LastRotations[LastRotations.Length-2]);
+            rotation = LastRotations[LastRotations.Length - 1] * Quaternion.Inverse(LastRotations[LastRotations.Length - 2]);
 
             //Error: the incorrect rotation is sometimes returned
             rotation.ToAngleAxis(out angleDegrees, out unitAxis);
@@ -753,7 +753,7 @@ namespace NewtonVR
                 {
                     NVRHelpers.SetTransparent(GhostRenderers[rendererIndex].material, transparentcolor);
                 }
-                
+
                 if (Colliders != null)
                 {
                     GhostColliders = Colliders;
@@ -807,7 +807,7 @@ namespace NewtonVR
             SteamVR_Utils.Event.Remove("new_poses_applied", OnNewPosesApplied);
         }
     }
-    
+
     public enum VisibilityLevel
     {
         Invisible = 0,
@@ -817,7 +817,7 @@ namespace NewtonVR
 
     public enum HandState
     {
-        Uninitialized, 
+        Uninitialized,
         Idle,
         GripDownNotInteracting,
         GripDownInteracting,

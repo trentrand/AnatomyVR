@@ -14,6 +14,8 @@ public class InfoStation : MonoBehaviour
     public Material blood2;
     public Material brain;
     public Material none;
+    public Material lung;
+
     growscript screen;
 
     void Start()
@@ -53,6 +55,8 @@ public class InfoStation : MonoBehaviour
                 Info.text = factCollection.facts[1].TextA;
                 bubbleBig.growBubble = true;
                 screen.number = true;
+                GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = lung;
+                GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 broadCaster = "lungs";
                 break;
 
