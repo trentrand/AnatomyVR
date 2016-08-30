@@ -23,7 +23,9 @@ public class sceneChanger : MonoBehaviour
             if (item.broadCaster == "none")
             {
                 //Nothing Happens :)
+
             }
+
             if (item.broadCaster == "heart")
             {
                 SceneManager.LoadScene("BloodSceen");
