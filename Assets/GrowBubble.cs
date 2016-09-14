@@ -27,7 +27,7 @@ public class GrowBubble : MonoBehaviour
 
                 floatHeight.midpoint = floatHeight.midpoint + growNum / 2;
 
-            } 
+            }
 
         }
         else
