@@ -27,14 +27,14 @@ public class GrowBubble : MonoBehaviour
 
                 floatHeight.midpoint = floatHeight.midpoint + growNum / 2;
 
-            } 
+            }
 
         }
         else
         {
             transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             growNum = 0.1f;
-            floatHeight.midpoint = 0.5f;
+            floatHeight.midpoint = 0.66f;
         }
     }
 }
