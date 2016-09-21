@@ -2,7 +2,8 @@
 
 <FactList>
   <Facts>
-    <Fact name="Heart">
+    <Fact name="Heart"> <!-- 1 -->
+     
 
       <FactA>
         Heart:
@@ -48,7 +49,7 @@
 
     </Fact>
 
-    <Fact name="Lungs">
+    <Fact name="Lungs"> <!-- 2 -->
 
       <FactA>
         Lungs:
@@ -101,7 +102,7 @@
       </FactC>
     </Fact>
 
-    <Fact name="Spine">
+    <Fact name="Spine"> <!-- 3 -->
 
       <FactA>
         Spine:
@@ -153,7 +154,7 @@
 
     </Fact>
 
-    <Fact name="Ribs">
+    <Fact name="Ribs"> <!-- 4 -->
 
       <FactA>
         Ribs:
@@ -177,7 +178,7 @@
 
 
 
-    <Fact name="Brain">
+    <Fact name="Brain"> <!-- 5 -->
 
       <FactA>
 
@@ -231,7 +232,7 @@
 
     </Fact>
 
-    <Fact name="Skull">
+    <Fact name="Skull"> <!-- 6 -->
 
       <FactA>
         Skull:
@@ -247,16 +248,9 @@
 
 
 
-    </Fact>
-    <Fact name="Bone">
-
-      <FactA>
-        A bone in the human body.
-
-      </FactA>
 
     </Fact>
-    <Fact name="Hand">
+    <Fact name="Hand"> <!-- 7 -->
 
       <FactA>
         Hands:
@@ -266,7 +260,7 @@
 
 
     </Fact>
-    <Fact name="Intestines">
+    <Fact name="Intestines"><!-- 8 -->
 
       <FactA>
         Intestines:
@@ -294,9 +288,9 @@
         Eating consumes up to 5 years of your life.
       </FactB>
 
-      <Fact name="Tibia">
+      <Fact name="Tibia"><!-- 9 -->
 
-        <FactA>
+       
           Tibia:
           The bone that fractures most is the tibia.
 
@@ -308,9 +302,9 @@
 
           Most weight is supported by the tibia.
 
-        </FactA>
+       
       </Fact>
-      <Fact name="Fibula">
+      <Fact name="Fibula"> <!-- 10 -->
 
         <FactA>
           Fibula:
@@ -327,7 +321,7 @@
 
         </FactA>
       </Fact>
-      <Fact name="Femur">
+      <Fact name="Femur"><!-- 11 -->
 
         <FactA>
           Femur:
