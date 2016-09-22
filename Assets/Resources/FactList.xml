@@ -263,34 +263,33 @@
     <Fact name="Intestines"><!-- 8 -->
 
       <FactA>
-        Intestines:
-        There is a small and large intestine.
+        Tibia:
+        The bone that fractures most is the tibia.
 
-        The intestines are made up of 4 parts:
-        the Small Bowel,
-        the Colon,
-        the Rectum,
-        the Anus.
+        The tibia is larger than the fibia.
 
-        The small intestine breaks down nutrients in food.
+        The tibia is more commonly known as the shin bone.
 
-        The large intestine makes important proteins and acids.
-
-        In an average adult, the small intestine is usually 16 feet.
+        Most weight is supported by the tibia.
 
       </FactA>
 
       <FactB>
-        It takes at least 12 hours to fully digest the food we eat.
-        Honey is easy to digest because it has already been pre-digested by a bee.
-        Muscles in the intestines can move food to even defy gravity,
-        so we could technically eat upside down.
-        Eating consumes up to 5 years of your life.
+        Fibula:
+        Only two bones reside in the lower leg: the fibia and tibia.
+
+        The fibia is smaller than the fibia.
+
+        The fibia is more comonly known as the calf bone.
+
+        The thinest longbone in the human body is the fibia.
+
+        The word fibia comes from the latin, meaning broach or clasp.
       </FactB>
 
       <Fact name="Tibia"><!-- 9 -->
 
-       
+        <FactA>
           Tibia:
           The bone that fractures most is the tibia.
 
@@ -302,6 +301,8 @@
 
           Most weight is supported by the tibia.
 
+        </FactA>
+          
        
       </Fact>
       <Fact name="Fibula"> <!-- 10 -->

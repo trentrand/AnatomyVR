@@ -104,11 +104,11 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.fibula:
-                Info.text = factCollection.facts[9].TextA;
+                Info.text = factCollection.facts[7].TextB;
                 screen.number = true;
                 break;
             case Anatomy.tibia:
-                Info.text = "testing" + factCollection.facts[5].TextA;
+                Info.text = factCollection.facts[7].TextA;
                 screen.number = true;
                 break;
             case Anatomy.foot:
