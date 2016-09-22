@@ -34,9 +34,7 @@ public class GrowBubble : MonoBehaviour
         {
             transform.localScale = new Vector3(0.1242573f, 0.1242573f, 0.1242573f);
             growNum = 0.1f;
-            floatHeight.midpoint = 0.5f;
+            floatHeight.midpoint = 0.5f; // This tells where the bubble is floating
         }
     }
 }
-
-
