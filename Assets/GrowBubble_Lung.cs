@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class GrowBubble_Blood : MonoBehaviour
+public class GrowBubble_Lung : MonoBehaviour
 {
     public bool growBubble = false;
     float growNum = 0;
@@ -34,7 +34,7 @@ public class GrowBubble_Blood : MonoBehaviour
         {
             transform.localScale = new Vector3(0.1242573f, 0.1242573f, 0.1242573f);
             growNum = 0.1f;
-            floatHeight.midpoint = -0.25f; // This tells where in space the bubble is floating (upwards)
+            floatHeight.midpoint = .75f; // This tells where in space the bubble is floating (upwards)
         }
     }
 }
