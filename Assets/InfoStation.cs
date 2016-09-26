@@ -69,63 +69,63 @@ public class InfoStation : MonoBehaviour
 
             case Anatomy.ribs:
                 Info.text = factCollection.facts[3].TextA;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.skull:
                 Info.text = factCollection.facts[5].TextA;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.collarbone:
                 Info.text = factCollection.facts[4].TextB;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.shoulderblade:
                 Info.text = factCollection.facts[5].TextB;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.ulna:
                 Info.text = factCollection.facts[0].TextB;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.radius:
                 Info.text = factCollection.facts[0].TextC;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.hip:
                 Info.text = factCollection.facts[4].TextC;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.hand:
                 Info.text = factCollection.facts[6].TextA;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.femur:
                 Info.text = factCollection.facts[7].TextC;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.fibula:
                 Info.text = factCollection.facts[7].TextB;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.tibia:
                 Info.text = factCollection.facts[7].TextA;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.foot:
                 Info.text = factCollection.facts[2].TextC;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.kneecap:
                 Info.text = factCollection.facts[1].TextC;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.humerus:
                 Info.text = factCollection.facts[1].TextB;
-                screen.number = true;
+                screen.number = true; broadCaster = "none";
                 break;
             case Anatomy.trachea:
                 Info.text = factCollection.facts[2].TextB; ;
-                screen.number = true;
+                screen.number = true;broadCaster = "none";
                 break;
 
             default:
