@@ -70,32 +70,19 @@
       </FactB>
 
       <FactC>
-        When humans breathe in or inhale,
-        the lungs expand.
-        This expansion is possible only
-        when diaphragm squeezes.
-        The diaphragm is actually a small
-        dome-shaped
-        muscles seated right below the lungs.
-        You could live with just one lung,
-        it will limit your physical ability,
-        but you can still have normal life.
-        The study of lung diseases is
-        known as pulmonology.
-        Asthma is a common disease that
-        affects the lungs.
-        Asthma attacks happen when your airways
-        narrow after being irritated.
-        The narrow airways make it hard
-        for you to breathe in air.
-        Pneumonia is a dangerous disease
-        that makes it harder
-        for your lungs to absorb oxygen
-        from the air you breathe.
+        Kneecap:
+        The patella is known as the kneecap.
+        
+        Twelve muscels are needed for the knee to function.
+        
+        Thick cartalage coveres the back of the knee.
+        
+        The kneecap is not connected to a joint.
+
       </FactC>
     </Fact>
 
-    <Fact name="Spine"> <!-- 2 -->
+    <Fact name="Spine,Trachea,foot"> <!-- 2 -->
 
       <FactA>
         Spine:
@@ -113,35 +100,28 @@
       </FactA>
 
       <FactB>
-        The spinal cord is about 1 centimeter thick.
-        Astronauts grow 1 or 2 inches upon returning
-        from space because of gravity.
-        The spinal cord has over 100 joints,
-        at least 220 ligaments and over 120 total muscles.
-        Babies have more vertebrae than adults,
-        this is because some of the bones come
-        together as we grow older.
-        Giraffe's have the same number of
-        cervical (neck) vertebrae as human's.
-        If a spine were to be taken out of a human body,
-        it can stand hundreds of kilograms.
+        Trachea:
+        The trachea is a four inch wide tube near the lungs.
+        
+        The trachea's diameter is less than an inch.
+        
+        The trachea has cartalage rings surrounding it.
+        
+        As one breathes in, the trachea widens.
+
 
       </FactB>
 
       <FactC>
-        The spinal column is very important,
-        it supports the weight of the body,
-        it provide flexibility for movement,
-        and is the central pathway for the nerves.
-        One quarter of the spine is made of cartilage.
-        There are 23 elastic disks between
-        each of the vertebrae.
-        These discs compress when we put pressure on them
-        and decompress we the pressure is relieved.
-        The disks have a cartridge casing, this helps the
-        disk stay flexible,
-        they also absorb the shocks that transfer to
-        the spine when we are active.
+        Feet:
+        The toes contain metatarsels and phalangese.
+        
+        The metatarsels are longer than the phalanges.
+        
+        The calcaneus or heel bone is the largest bone in the foot.
+        
+        The talus bone in the foot supports the leg.
+
       </FactC>
 
 
@@ -171,7 +151,7 @@
 
 
 
-    <Fact name="Brain"> <!-- 4 -->
+    <Fact name="Brain,Collar Bones, hip"> <!-- 4 -->
 
       <FactA>
 
@@ -194,38 +174,31 @@
       </FactA>
 
       <FactB>
-        The brain almost produces enough energy to light a light bulb.
-        Yawning is the brain's way of cooling itself down.
-        The brain is the only organ in the human body that has no nerves,
-        so it can't feel any pain.
-        The human brain is not as perfect as it is thought of since in many
-        instances it has been found to fool human beings making them to perceive
-        things differently from the reality.
-        Your brain keeps developing until your late 40's.
-        Your brain uses 20% of all the oxygen and blood in your body.
-        Even though sometimes people say that the right part and
-        left part of the brain are divided, they both actually work together.
-        The frontal lobes control thinking, planning, organizing, problem solving,
-        short-term memory and movement.
+        Collar bone:
+        The cavicle is also known as the collar bone.
+        
+        The cavicle is the only horizontal long bone.
+        
+        The clavicle keeps shoulder blade in place.
+        
+        It is derived from the latin word meaning little key.
+
       </FactB>
 
       <FactC>
-        The parietal lobes interpret sensory information,
-        such as taste, temperature and touch.
-        The occipital lobes process images from your eyes and
-        link that information with images stored in memory.
-        The temporal lobes process information from your senses of smell, taste and sound.
-        They also play a role in memory storage.
-        The cerebellum is the part of the brain that controls the sensory information
-        like sight, sound, taste, smell, and hearing.
-        The limbic system is the part of the brain that controls emotions and memories.
-        The peripheral nervous system is the nerves that makes sure that your brain
-        sends the right information to the right side of you body.
+        Hip:
+        The hip supports the digestive track.
+
+        The hip joint is a ball and socket joint.
+        
+        A "broken hip" is actually a broken tip of the Femur.
+
+
       </FactC>
 
     </Fact>
 
-    <Fact name="Skull"> <!-- 5 -->
+    <Fact name="Skull,shoulderblade"> <!-- 5 -->
 
       <FactA>
         Skull:
@@ -238,6 +211,14 @@
         The bones fuse so an adult's skull has 22 bones.
 
       </FactA>
+      <FactB>
+        Shoulder Blade:
+        The shoulder blade is also known as the scapula.
+        
+        There are 17 muscels connected to the scapua.
+        
+        The scapula is the least commonly broken bone.
+      </FactB>
 
 
 
@@ -246,8 +227,19 @@
     <Fact name="Hand"> <!-- 6 -->
 
       <FactA>
-        Hands:
-        The hands consist of an average of 27 bones.
+        Hand:
+        The fingers are composed of matacarpels and phalangese.
+        
+        The phalanges have three sections:
+        proximal,
+        middle,
+        distal.
+        
+        There are no muscels in the fingers.
+        
+        The hands have an average of 27 bones.
+
+
 
       </FactA>
 
@@ -277,7 +269,7 @@
 
         The thinest longbone in the human body is the fibia.
 
-        The word fibia comes from the latin word meaning clasp.
+        The word fibia comes from a latin word meaning clasp.
       </FactB>
 
       <FactC>

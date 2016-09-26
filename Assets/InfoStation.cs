@@ -76,11 +76,11 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.collarbone:
-                Info.text = "The collarbone:" + factCollection.facts[6].TextA;
+                Info.text = factCollection.facts[4].TextB;
                 screen.number = true;
                 break;
             case Anatomy.shoulderblade:
-                Info.text = "The shoulderblade:" + factCollection.facts[6].TextA;
+                Info.text = factCollection.facts[5].TextB;
                 screen.number = true;
                 break;
             case Anatomy.ulna:
@@ -92,7 +92,7 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.hip:
-                Info.text = "    The hip helps support the digestive track";
+                Info.text = factCollection.facts[4].TextC;
                 screen.number = true;
                 break;
             case Anatomy.hand:
@@ -112,11 +112,11 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.foot:
-                Info.text = "   One quarter of a human's bones are in the feet";
+                Info.text = factCollection.facts[2].TextC;
                 screen.number = true;
                 break;
             case Anatomy.kneecap:
-                Info.text = "The kneecap:" + factCollection.facts[6].TextA;
+                Info.text = factCollection.facts[1].TextC;
                 screen.number = true;
                 break;
             case Anatomy.humerus:
@@ -124,7 +124,7 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.trachea:
-                Info.text = "   The trachea is an organ in the human body";
+                Info.text = factCollection.facts[2].TextB; ;
                 screen.number = true;
                 break;
 
