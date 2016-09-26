@@ -84,11 +84,11 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.ulna:
-                Info.text = "The ulna:" + factCollection.facts[6].TextA;
+                Info.text = factCollection.facts[0].TextB;
                 screen.number = true;
                 break;
             case Anatomy.radius:
-                Info.text = "The radius:" + factCollection.facts[6].TextA;
+                Info.text = factCollection.facts[0].TextC;
                 screen.number = true;
                 break;
             case Anatomy.hip:
@@ -100,7 +100,7 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.femur:
-                Info.text = factCollection.facts[10].TextA;
+                Info.text = factCollection.facts[7].TextC;
                 screen.number = true;
                 break;
             case Anatomy.fibula:
@@ -120,7 +120,7 @@ public class InfoStation : MonoBehaviour
                 screen.number = true;
                 break;
             case Anatomy.humerus:
-                Info.text = "The humerus:" + factCollection.facts[6].TextA;
+                Info.text = factCollection.facts[1].TextB;
                 screen.number = true;
                 break;
             case Anatomy.trachea:
