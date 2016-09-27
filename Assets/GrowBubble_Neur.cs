@@ -32,7 +32,7 @@ public class GrowBubble_Neur : MonoBehaviour
         }
         else
         {
-            transform.localScale = new Vector3(0.1242573f, 0.1242573f, 0.1242573f);
+            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             growNum = 0.1f;
             floatHeight.midpoint = 0.8f; // This tells where the bubble is floating
         }
