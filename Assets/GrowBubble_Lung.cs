@@ -32,8 +32,8 @@ public class GrowBubble_Lung : MonoBehaviour
         }
         else
         {
-            transform.localScale = new Vector3(0.1242573f, 0.1242573f, 0.1242573f);
-            growNum = 0.1f;
+            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            growNum = 0.5f;
             floatHeight.midpoint = .75f; // This tells where in space the bubble is floating (upwards)
         }
     }
