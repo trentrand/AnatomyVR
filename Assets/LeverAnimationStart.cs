@@ -18,8 +18,9 @@ public class LeverAnimationStart : MonoBehaviour {
     {
         if (other.tag == "LeverHandle")
         {
-            handMover.applyRootMotion = true;
-
+            
+                handMover.applyRootMotion = true;
+Debug.Log("introAnimationPlay");
         }
     }
 }
