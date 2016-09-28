@@ -8,6 +8,7 @@ public class StayUntilSkullMoves : MonoBehaviour
     BoxCollider collide;
     Vector3 iniPos;
     NVRInteractableItem nvritem;
+    Rigidbody selfRb;
    
 
     // Use this for initialization
@@ -17,6 +18,7 @@ public class StayUntilSkullMoves : MonoBehaviour
         rb = GameObject.Find("Skull").GetComponent<Rigidbody>();
         collide = gameObject.GetComponent<BoxCollider>();
         nvritem = GetComponent<NVRInteractableItem>();
+        selfRb = GetComponent<Rigidbody>();
 
 
     }
@@ -27,12 +29,12 @@ public class StayUntilSkullMoves : MonoBehaviour
 
         if (rb.isKinematic == true && iniPos == transform.position)
         {
-            collide.enabled = false; nvritem.enabled = false;
+            collide.enabled = false; nvritem.enabled = false; selfRb.constraints = RigidbodyConstraints.FreezeAll;
             Debug.Log("BrainCantMove");
         }
         else
         {
-            collide.enabled = true; nvritem.enabled = true;
+            collide.enabled = true; nvritem.enabled = true; selfRb.constraints = RigidbodyConstraints.None;
             Debug.Log("BrainCanMove");
         }
     }

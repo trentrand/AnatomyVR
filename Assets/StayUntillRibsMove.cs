@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using NewtonVR;
 
 public class StayUntillRibsMove : MonoBehaviour
 {
     Rigidbody rb;
     BoxCollider collide;
     Vector3 iniPos;
+    NVRInteractableItem nvritem;
+    Rigidbody selfRb;
+
 
     // Use this for initialization
     void Start()
@@ -13,6 +17,8 @@ public class StayUntillRibsMove : MonoBehaviour
         iniPos = transform.position;
         rb = GameObject.Find("Ribs").GetComponent<Rigidbody>();
         collide = gameObject.GetComponent<BoxCollider>();
+        nvritem = GetComponent<NVRInteractableItem>();
+        selfRb = GetComponent<Rigidbody>();
 
 
     }
@@ -23,11 +29,13 @@ public class StayUntillRibsMove : MonoBehaviour
 
         if (rb.isKinematic == true && iniPos == transform.position)
         {
-            collide.enabled = false;
+            collide.enabled = false; nvritem.enabled = false; selfRb.constraints = RigidbodyConstraints.FreezeAll;
+            Debug.Log("BrainCantMove");
         }
         else
         {
-            collide.enabled = true;
+            collide.enabled = true; nvritem.enabled = true; selfRb.constraints = RigidbodyConstraints.None;
+            Debug.Log("BrainCanMove");
         }
     }
 }
