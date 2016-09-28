@@ -34,7 +34,7 @@ public class GrowBubble_Blood : MonoBehaviour
         {
             transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             growNum = 0.1f;
-            floatHeight.midpoint = -0.25f; // This tells where in space the bubble is floating (upwards)
+            floatHeight.midpoint = -0.25f; // This tells where in space the bubble is floating (higher the number, more upwards)
         }
     }
 }
