@@ -16,9 +16,9 @@ public class growscript : MonoBehaviour
     {
         if (number == true)
         {
-            if (growNum <= 1.1)
+            if (growNum <= 1.331979)
             {
-                transform.localScale = new Vector3(1.026186f, growNum, 0.0001f);
+                transform.localScale = new Vector3(1.341323f, growNum, 0.0120887f);
 
                 growNum = growNum + 0.1f;
 
