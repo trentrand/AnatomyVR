@@ -1,8 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Anatomy : MonoBehaviour
 {
+
+
+   public static Boolean hasPlayed = true;
     public const string skull = "Skull",
         ribs = "Ribs",
         spine = "Spine",
@@ -36,4 +40,7 @@ public class Anatomy : MonoBehaviour
     {
 
     }
+
+
+
 }

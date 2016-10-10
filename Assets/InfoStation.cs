@@ -16,7 +16,33 @@ public class InfoStation : MonoBehaviour
     public Material none;
     public Material lung;
 
+    public Boolean soundPlaying = false;
+
+
+    public AudioClip Heart;
+    public AudioClip Brain;
+    public AudioClip Skull;
+    public AudioClip Lungs;
+    public AudioClip Spine;
+    public AudioClip Collarbone;
+    public AudioClip Feet;
+    public AudioClip Femur;
+    public AudioClip Fibula;
+    public AudioClip Hand;
+    public AudioClip Hip;
+    public AudioClip Humerus;
+    public AudioClip Kneecap;
+    public AudioClip Rib;
+    public AudioClip Radius;
+    public AudioClip ShoulderBlade;
+    public AudioClip Tibia;
+    public AudioClip Trachea;
+    public AudioClip Ulna;
+
+
     growscript screen;
+
+
 
     void Start()
     {
@@ -41,6 +67,22 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = blood2;
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 broadCaster = "heart";
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Heart, 1);
+                /*
+                if (soundPlaying == false)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(Heart, 1);
+                    soundPlaying = true;
+                }
+                else
+                {
+                    GetComponent<AudioSource>().Stop();
+                    soundPlaying = false;
+                }
+            */
+               
+               
                 break;
             case Anatomy.brain:
                 Info.text = factCollection.facts[4].TextA;
@@ -49,6 +91,22 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = brain;
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 broadCaster = "brain";
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Brain, 1);
+
+                /*
+                if (soundPlaying == false)
+                {
+                    GetComponent<AudioSource>().PlayOneShot(Brain, 1);
+                    soundPlaying = true;
+                }
+                else
+                {
+                    GetComponent<AudioSource>().Stop();
+                    soundPlaying = false;
+                }
+                */
+
                 break;
 
             case Anatomy.lungs:
@@ -58,6 +116,11 @@ public class InfoStation : MonoBehaviour
                 GameObject.Find("Animation Orb (1)").GetComponent<MeshRenderer>().material = lung;
                 GameObject.Find("Animation Orb").GetComponent<MeshRenderer>().material = none;
                 broadCaster = "lungs";
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Lungs, 1);
+
+      
+
                 break;
 
             case Anatomy.spine:
@@ -65,67 +128,140 @@ public class InfoStation : MonoBehaviour
                 bubbleBig.growBubble = true;
                 screen.number = true;
                 broadCaster = "spine";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Spine, 1);
+
                 break;
 
             case Anatomy.ribs:
                 Info.text = factCollection.facts[3].TextA;
                 screen.number = true; broadCaster = "none";
+
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Rib, 1);
+
+
                 break;
             case Anatomy.skull:
                 Info.text = factCollection.facts[5].TextA;
                 screen.number = true; broadCaster = "none";
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Skull, 1);
                 break;
             case Anatomy.collarbone:
                 Info.text = factCollection.facts[4].TextB;
                 screen.number = true; broadCaster = "none";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Collarbone, 1);
+            
                 break;
             case Anatomy.shoulderblade:
                 Info.text = factCollection.facts[5].TextB;
                 screen.number = true; broadCaster = "none";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(ShoulderBlade, 1);
                 break;
             case Anatomy.ulna:
                 Info.text = factCollection.facts[0].TextB;
                 screen.number = true; broadCaster = "none";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Ulna, 1);
+
+           
                 break;
             case Anatomy.radius:
                 Info.text = factCollection.facts[0].TextC;
                 screen.number = true; broadCaster = "none";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Radius, 1);
+
+
                 break;
             case Anatomy.hip:
                 Info.text = factCollection.facts[4].TextC;
                 screen.number = true; broadCaster = "none";
+
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Hip, 1);
+
+
                 break;
             case Anatomy.hand:
                 Info.text = factCollection.facts[6].TextA;
                 screen.number = true; broadCaster = "none";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Hand, 1);
+
                 break;
             case Anatomy.femur:
                 Info.text = factCollection.facts[7].TextC;
                 screen.number = true; broadCaster = "none";
+
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Femur, 1);
+
                 break;
             case Anatomy.fibula:
                 Info.text = factCollection.facts[7].TextB;
                 screen.number = true; broadCaster = "none";
+
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Fibula, 1);
+
                 break;
             case Anatomy.tibia:
                 Info.text = factCollection.facts[7].TextA;
                 screen.number = true; broadCaster = "none";
+
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Tibia, 1);
+
                 break;
             case Anatomy.foot:
                 Info.text = factCollection.facts[2].TextC;
                 screen.number = true; broadCaster = "none";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Feet, 1);
+
+         
                 break;
             case Anatomy.kneecap:
                 Info.text = factCollection.facts[1].TextC;
                 screen.number = true; broadCaster = "none";
+
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Kneecap, 1);
+         
                 break;
             case Anatomy.humerus:
                 Info.text = factCollection.facts[1].TextB;
                 screen.number = true; broadCaster = "none";
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Humerus, 1);
+              
                 break;
             case Anatomy.trachea:
                 Info.text = factCollection.facts[2].TextB; ;
                 screen.number = true;broadCaster = "none";
+
+
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().PlayOneShot(Trachea, 1);
+
                 break;
 
             default:
@@ -225,7 +361,7 @@ public class InfoStation : MonoBehaviour
                 break;
             case Anatomy.kneecap:
                 Info.text = "";
-                screen.number = false;
+                screen.number = false; 
                 break;
             case Anatomy.femur:
                 Info.text = "";
