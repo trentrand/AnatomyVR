@@ -221,37 +221,39 @@ namespace NewtonVR
             UpdateVisibilityAndColliders();
         }
 
-
-        public void TriggerHapticPulse(ushort durationMicroSec = 500, EVRButtonId buttonId = EVRButtonId.k_EButton_Axis0)
-        {
+        
+        public void TriggerHapticPulse(ushort durationMicroSec = 500, EVRButtonId buttonId = EVRButtonId.k_EButton_Axis0)  // originally used 500 for durationMicroSec
+       {
             if (Controller != null)
-            {
-                if (durationMicroSec < 3000)
+           {
+             if (durationMicroSec < 3000)  // origianlly used 3000
                 {
-                    Controller.TriggerHapticPulse(durationMicroSec, buttonId);
-                }
+                    //   Controller.TriggerHapticPulse(durationMicroSec, buttonId);
+                    Debug.LogWarning(" Controller.TriggerHapticPulse(durationMicroSec, buttonId");
+                 }
                 else
-                {
-                    Debug.LogWarning("You're trying to pulse for over 3000 microseconds, you probably don't want to do that. If you do, use NVRHand.LongHapticPulse(float seconds)");
-                }
-            }
-        }
-
-        public void LongHapticPulse(float seconds, EVRButtonId buttonId = EVRButtonId.k_EButton_Axis0)
+              {
+                  Debug.LogWarning("You're trying to pulse for over 3000 microseconds, you probably don't want to do that. If you do, use NVRHand.LongHapticPulse(float seconds)");
+              }
+         }
+     }
+     
+        /*
+        public void LongHapticPulse(float seconds, EVRButtonId buttonId = EVRButtonId.k_EButton_Axis0)  //ong haptic pulse
         {
             StartCoroutine(DoLongHapticPulse(seconds, buttonId));
         }
 
-        private IEnumerator DoLongHapticPulse(float seconds, EVRButtonId buttonId)
+       private IEnumerator DoLongHapticPulse(float seconds, EVRButtonId buttonId)
         {
             float startTime = Time.time;
-            float endTime = startTime + seconds;
+           float endTime = startTime + seconds;
             while (Time.time < endTime)
             {
                 Controller.TriggerHapticPulse(100, buttonId);
                 yield return null;
             }
-        }
+       }*/
 
         private void UpdateVisibilityAndColliders()
         {
@@ -438,10 +440,11 @@ namespace NewtonVR
             if (EstimationSampleIndex >= LastPositions.Length)
                 EstimationSampleIndex = 0;
 
-            if (Controller != null && IsInteracting == false && IsHovering == true)
+          /*  if (Controller != null && IsInteracting == false && IsHovering == true)
             {
                 Controller.TriggerHapticPulse(100);
             }
+            */
         }
 
         public virtual void BeginInteraction(NVRInteractable interactable)
